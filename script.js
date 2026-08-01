@@ -1,5 +1,8 @@
 // ===== ThePotato OS =====
-
+const boot = document.getElementById("boot");
+const progress = document.getElementById("bootProgress");
+const device = document.getElementById("device");
+device.style.display = "none";
 const menu = [
     "Radio",
     "Infrared",
