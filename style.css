@@ -142,3 +142,62 @@ footer{
 
     font-size:18px;
 }
+/* ---------- BOOT ---------- */
+
+#boot{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#b8d79d;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+    gap:25px;
+
+    font-family:Consolas,monospace;
+
+}
+
+#boot h1{
+
+    font-size:64px;
+
+    color:#222;
+
+}
+
+#boot p{
+
+    font-size:24px;
+
+}
+
+#bootBar{
+
+    width:420px;
+
+    height:16px;
+
+    background:#6f8e5b;
+
+}
+
+#bootProgress{
+
+    width:0%;
+
+    height:100%;
+
+    background:#222;
+
+}
