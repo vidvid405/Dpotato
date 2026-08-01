@@ -1,5 +1,9 @@
 // ===== ThePotato OS =====
+const boot = document.getElementById("boot");
+const progress = document.getElementById("bootProgress");
+const device = document.getElementById("device");
 
+device.style.display="none";
 const menu = [
     "Radio",
     "Infrared",
@@ -108,3 +112,22 @@ MODULE READY`;
     }
 
 });
+let value = 0;
+
+const timer = setInterval(()=>{
+
+    value++;
+
+    progress.style.width = value + "%";
+
+    if(value>=100){
+
+        clearInterval(timer);
+
+        boot.style.display="none";
+
+        device.style.display="block";
+
+    }
+
+},20);
