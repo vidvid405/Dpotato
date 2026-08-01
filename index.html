@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>ThePotato OS</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
 <div id="boot">
 
-    <h1>ThePotato OS</h1>
+<h1>ThePotato OS</h1>
 
-    <p>Initializing system...</p>
+<p id="bootText">Booting...</p>
 
-    <div id="bootBar">
+<div id="bootBar">
 
-        <div id="bootProgress"></div>
-
-    </div>
+<div id="bootProgress"></div>
 
 </div>
+
+</div>
+
 <div id="device">
 
 <header id="statusBar">
-    <span id="logo">ThePotato OS</span>
-    <span id="status">READY</span>
-    <span id="clock">00:00</span>
+
+<div>ThePotato OS</div>
+
+<div id="status">READY</div>
+
+<div id="clock">00:00</div>
+
 </header>
 
 <main id="screen">
 
-<div id="left">
+<section id="left">
 
 <h1>Dpotato</h1>
 
 <ul id="menu">
+
 <li class="selected">Radio</li>
 <li>Infrared</li>
 <li>NFC</li>
@@ -47,19 +56,17 @@
 <li>Games</li>
 <li>Settings</li>
 <li>About</li>
+
 </ul>
 
-</div>
+</section>
 
-<div id="right">
+<section id="right">
 
-<div id="potatoBox">
-
-<img id="potato"
+<img
+id="potato"
 src="potato.svg"
 alt="Dpotato">
-
-</div>
 
 <div id="terminal">
 
@@ -67,13 +74,15 @@ SYSTEM READY
 
 </div>
 
-</div>
+</section>
 
 </main>
 
 <footer>
 
-↑ ↓ Move &nbsp;&nbsp; Enter Open
+↑ ↓ Move
+&nbsp;&nbsp;&nbsp;
+Enter Open
 
 </footer>
 
